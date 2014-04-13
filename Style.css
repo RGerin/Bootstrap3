@@ -1,0 +1,20 @@
+body {
+
+}
+
+.row{
+	
+	padding-top: 15px;
+	padding-bottom: 15px;
+	
+}
+
+/*smartphones (portrait)------*/
+@media only screen
+and (max-width : 600px){
+	body {
+		background-color: blue;
+		
+	}
+	
+}
