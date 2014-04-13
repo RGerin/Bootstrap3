@@ -6,7 +6,7 @@
 * I got it by selecting the "share" option on the YouTube page and copying and 
 * and pasting the embed code.I must add "http://" before the link. */
 
- var video = "<iframe width='560' height='315' src='http://www.youtube.com/embed/tZAC5OChRr0?html5=1' frameborder='0' allowfullscreen></iframe>";
+var video = "<iframe width='560' height='315' src='http://www.youtube.com/embed/tZAC5OChRr0?html5=1' frameborder='0' allowfullscreen></iframe>";
 
 
 $(document).ready(function() {
@@ -19,9 +19,11 @@ setNav();
 function setNav() {
 	
 /* This event listener fires when the ".GreatWall" button is clicked.
- * It opens the modal window and inserts the video into the ".modal-body" container. */
+ * It opens the modal window and inserts the video into the ".modal-body" container. 
+ * I initialliy made an error below by typing ".GreatWall" instead of ".wall1", so that the video 
+ * button was not activating the video". */
 	
-	$(".GreatWall").on("click", function() {
+	$(".wall1").on("click", function() {
 		$('#myModal').modal();
 		$(".modal-body").html(video);
 	});
